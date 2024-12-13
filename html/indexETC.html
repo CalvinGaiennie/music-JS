@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ear Training</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+  <body>
+    <header class="banner">
+      <div class="bannerContent grid">
+        <a href="../../index.html" style="text-decoration: none">All</a>
+        <a style="text-decoration: none" href="indexT.html">Tuner</a>
+        <a style="text-decoration: none" href="indexBG.html">Beginner Guitar</a>
+        <a style="text-decoration: none" href="indexMT.html">Music Theory</a>
+        <a href="indexFT.html" style="text-decoration: none">Fretboard IQ</a>
+        <br />
+        <a href="indexETC.html" style="text-decoration: none">Ear Training</a>
+        <br />
+        <a href="indexSD.html" style="text-decoration: none"
+          >Chords and Scales</a
+        >
+        <br />
+        <a href="indexCC.html" style="text-decoration: none"
+          >Chord Chart Creator</a
+        >
+        <a href="indexSC.html" style="text-decoration: none"
+          >Metronome/Stick Control Workout</a
+        >
+      </div>
+    </header>
+    <aside class="left-banner">
+      <div class="left-banner-label">
+        <div>
+          <!-- difficulty button -->
+          <h2>Settings</h2>
+          <h3 for="intrument">Select An Instrument</h3>
+          <select id="instrument">
+            <option value="guitarOnly" selected>Guitar Only</option>
+            <option value="bassOnly">Bass Only</option>
+            <option value="melodiesOnly">Melodies Only</option>
+          </select>
+          <h3 for="difficulty">Select Song Bank:</h3>
+          <select id="difficulty">
+            <option value="videosBeginnerG">BeginnerG</option>
+            <option value="videosBeginner">Beginner</option>
+            <option value="videosBeginnerCapo">Beginner+Capo</option>
+            <option value="videosIntermediate">Intermediate</option>
+            <option value="fullSongs">Full Songs</option>
+            <option value="patrick">Patrick</option>
+          </select>
+          <div id="rules">
+            <h3>Guide</h3>
+            <h4 class="difficulty0">
+              BeginnerG (6) (Number of tracks in category)
+            </h4>
+            <p class="content">Same as beginner but only in the key of G</p>
+            <h4 class="difficulty1">Beginner (3)</h4>
+            <p class="content">
+              The chords in the beginner progressions are all diatonic. All
+              progressions are in one of the following keys: G C D E and A. No
+              capo required.
+            </p>
+            <h4 class="difficulty">Beginner+Capo (2)</h4>
+            <p class="content">
+              Same as beginner but with a capo. Can be in any key.
+            </p>
+            <h4 class="difficulty2">Intermediate (2)</h4>
+            <p class="content">
+              All keys, more complex progressions, multipart songs, extended
+              chords, more complex strumming, some fingerpicking and, faster
+              changes. Mostly diatonic chords.
+            </p>
+            <h4 class="difficulty3">Full Songs (3)</h4>
+            <p class="content">
+              Lots of extended and diatonic chords, walkups and walkdowns,
+              complex fingerpicking.
+            </p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <div class="bodyText">
+      <h1>Easy Tracks to Learn By Ear</h1>
+      <p>
+        When first learning songs by ear it can be difficult to find songs of
+        the appropriate difficulty. To solve that issue I've recorded some
+        covers with stripped down mixes and sorted them by complexity.
+      </p>
+
+      <br />
+      <h2>Play Randoms Song</h2>
+      <p>
+        This thing will play a random song from the bank that matches your
+        selections from the side bar.
+      </p>
+      <audio id="audioPlayer" controls>
+        Your browser does not support the audio tag.
+      </audio>
+      <button id="playButton">Play Random Song</button>
+      <!-- mix button -->
+      <br />
+      <h2>Get a Tip</h2>
+      <p id="tipContent"></p>
+      <button id="tipButton">Get Tip</button>
+      <h2>Chords and Key of The Song</h2>
+      <p id="feedback"></p>
+      <button id="feedbackButton">Get Chords</button>
+      <div>
+        <h2>Tips and Tricks</h2>
+        <h3>Write Down What You're Hearing</h3>
+        <p></p>
+        <h3>Use the Pentatonic Scale to Find the Key</h3>
+        <p></p>
+      </div>
+    </div>
+    <script src="../JS/scriptET.js"></script>
+  </body>
+</html>

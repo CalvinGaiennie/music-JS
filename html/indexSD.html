@@ -1,0 +1,139 @@
+<!-- https://www.youtube.com/watch?v=C6VLedW5Dwk<!DOCTYPE html> -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head> 
+  <body>
+    <header class="banner">
+      <div class="bannerContent grid">
+        <a href="../../index.html" style="text-decoration: none"
+          >All</a
+        >
+      <a style="text-decoration: none" href="indexT.html">Tuner</a>
+      <a style="text-decoration: none" href="indexBG.html">Beginner Guitar</a>
+      <a style="text-decoration: none" href="indexMT.html">Music Theory</a>
+      <a href="indexFT.html" style="text-decoration: none">Fretboard IQ</a>
+      <br />
+      <a href="indexETC.html" style="text-decoration: none">Ear Training</a>
+      <br />
+      <a href="indexSD.html" style="text-decoration: none"
+        >Chords and Scales</a
+      >
+      <br />
+      <a href="indexCC.html" style="text-decoration: none"
+        >Chord Chart Creator</a
+      >
+      <a href="indexSC.html" style="text-decoration: none"
+          >Metronome/Stick Control Workout</a
+        >
+      </div>
+    </header>
+    <aside class="left-banner">
+      <div class="settings">
+        <h2 id="TOC">Settings</h2>
+        <div class="settings-content">
+          <label for="instrument-selector"> Selected instrument:<p>
+          <select name="instrument-selector" id="instrument-selector">
+          </select>
+          <br>
+          <br>
+          <p>Accidental Selector</p>
+          <div class="accidental-selector">
+            <input type="radio" class="acc-select" id="flats" name="accidentals" value="flats" checked>
+            <label for="flats">♭</label>
+            <input type="radio" class="acc-select" id="sharps" name="accidentals" value="sharps">
+            <label for="flats">♯</label>
+            <br>
+            <br>
+            <label for="number-of-frets">Number of frets:</label>
+          <input type="number" id="number-of-frets" min="5" max="30" value="20">
+          <br>
+          <br>
+          <label for="show-all-notes"> Show all notes:</label>
+          <input type="checkbox" id="show-all-notes">
+          <br>
+          <br>
+          <label for="show-all-notes"> Show multiple notes:</label>
+          <input type="checkbox" id="show-multiple-notes">
+          <br>
+          <br>
+          <form>
+            <h4>Scale Generator</h4> 
+            <p>Key</p>
+            <select id="scaleStartInput" name="options">
+              <option value="a">A</option>
+              <option value="a#">A#/Bb</option>
+              <option value="b">B</option>
+              <option value="c">C</option>
+              <option value="c#">C#/Db</option>
+              <option value="d">D</option>
+              <option value="d#">D#/Eb</option>
+              <option value="e">E</option>
+              <option value="f">F</option>
+              <option value="f#">F#/Gb</option>
+              <option value="g">G</option>
+              <option value="g#">G#/Ab</option>
+            </select>
+            <br>
+            <p>Scale Type</p>
+            <select id="scaleTypeInput" name="options">
+              <option value="majorScaleFormula">Major Scale</option>
+              <option value="majorPentatonicFormula">Major Pentatonic Scale</option>
+              <option value="minorPentatonicFormula">Minor Pentatonic Scale</option>
+              <option value="majorArpeggioFormula">Major Arpeggio</option>
+              <option value="minorArpeggioFormula">Minor Arpeggio</option>
+            </select>
+            <p>Scale Shape</p>
+           <select id="scaleShapeInput">
+            <option value="Entire Scale">Entire Scale</option>
+            <option value="one">1</option>
+            <option value="two">2</option>
+            <option value="three">3</option>
+            <option value="four">4</option>
+            <option value="five">5</option>
+            <!-- <option value="stringOne">String 1</option>
+            <option value="stringTwo">String 2</option>
+            <option value="stringThree">String 3</option>
+            <option value="stringFour">String 4</option>
+            <option value="stringFive">String 5</option>
+            <option value="stringSix">String 6</option> -->
+          </select>
+          <br>
+          <br>
+           <button type='button' id="scale-display-button">Display Scale</button>
+           <span id="scale-display"></span>
+          </form>
+          <form>
+            <h4>Chord Generator</h4>
+            <select id="chord-generator">
+              <option value="A">A</option>
+              <option value="Am">Am</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+              <option value="Dm">Dm</option>
+              <option value="E">E</option>
+              <option value="Em">Em</option>
+              <option value="F">F</option>
+              <option value="G">G</option>
+            </select>
+            <button type="button" id="chord-display-button">Display Chord</button>
+          </form>
+        </div>
+      </div>
+  </aside>
+  <div class="bodyText">
+    <h1>Fretboard Simulator</h1>
+          <p class="no-margin">
+            This fretboard simulator
+             can help you visualize notes, shapes, and, patterns.
+          </p>
+  </div>
+    <div class="fretboard">
+    </div>
+    <div class="note-name-section"></div>
+    <script src="../JS/scriptSD.js"></script>
+  </body>
+</html>

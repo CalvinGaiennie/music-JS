@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metronome</title>
+    <link rel="stylesheet" href="../CSS/styleSC.css" />
+  </head>
+  <body>
+    <header class="banner">
+      <div class="bannerContent grid">
+        <a href="../../index.html" style="text-decoration: none"
+          >All</a
+        >
+      <a style="text-decoration: none" href="indexT.html">Tuner</a>
+      <a style="text-decoration: none" href="indexBG.html">Beginner Guitar</a>
+      <a style="text-decoration: none" href="indexMT.html">Music Theory</a>
+      <a href="indexFT.html" style="text-decoration: none">Fretboard IQ</a>
+      <br />
+      <a href="indexETC.html" style="text-decoration: none">Ear Training</a>
+      <br />
+      <a href="indexSD.html" style="text-decoration: none"
+        >Chords and Scales</a
+      >
+      <br />
+      <a href="indexCC.html" style="text-decoration: none"
+        >Chord Chart Creator</a
+      >
+      <a href="indexSC.html" style="text-decoration: none"
+          >Metronome/Stick Control Workout</a
+        >
+      </div>
+    </header>
+    <div class="side-banner">
+      <h2 id="banner-title">All Rudiments</h2>
+    </div>
+    <div class="main-body">
+      <div id="metronome">
+      <h1>Metronome</h1>
+      <div id="metronome-settings">
+        <div id="metronome-note-type-div">
+          <h3>Note Type</h3>
+          <select id="metronome-note-type">
+            <option value=".25">Quarter Notes</option>
+            <option selected="true" value=".125">Eighth Notes</option>
+          </select>
+        </div>
+        <div id="metronome-bpm"> 
+          <h3>BPM</h3>
+          <select id="metronomeBPM"></select>
+        </div>
+        <!-- <div id="metronome-time-signature">
+          <h3>Time Signature</h3>
+          <select></select>
+        </div> -->
+      </div>
+      <br>
+      <button id='toggleMetronome'><img src="../Assets/StickControlImages/Play.png" class="state" /></button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="stick-control-workout">
+      <h1>Stick Control Workout</h1>
+      <img src="../Assets/StickControlImages/staff.png" />
+      <p id="rudimentText"></p>
+      <div id="imgDiv" src=></div>
+      <div id="measureNumberDiv"></div>
+        <div>
+          <h2>Measures Per Rudiment</h2>
+          <select id="measures-per-rudiment">
+          </select>
+        </div>
+      <h2>Are You doing the Workout?</h2>
+        <select id="workout-state">
+          <option value="yes">Yes</option>
+          <option value="no" selected>No</option>
+        </select>
+      <audio id="audioPlayer" controls>
+        Your browser does not support the audio tag.
+      </audio>
+      <audio id="audioPlayer2" controls>
+        Your browser does not support the audio tag.
+      </audio>
+    </div>
+  </div>
+    <script src="../JS/scriptSC.js" ></script>
+  </body>
+</html>

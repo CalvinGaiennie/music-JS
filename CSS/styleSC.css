@@ -1,0 +1,90 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex; /* Flexbox layout */
+  gap: 10px; /* Optional: spacing between items */
+}
+
+img {
+  width: 64vw;
+}
+
+#container {
+  display: flex;
+  gap: 10px;
+}
+
+#audioPlayer {
+  display: none;
+}
+
+#audioPlayer2 {
+  display: none;
+}
+
+.state {
+  width: 30px;
+}
+
+.side-banner {
+  position: fixed; /* Keeps the banner fixed on the side */
+  top: 60px;
+  right: 0; /* Change to 'left: 0;' to position on the left */
+  width: 31vw;
+  height: 100%;
+  background-color: #f4f4f4;
+  border-left: 2px solid #ccc;
+  padding: 20px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Enables vertical scrolling */
+}
+
+.main-content {
+  margin-right: 220px; /* Leave space for the side banner on the right */
+  padding: 20px;
+}
+
+.bannerImg {
+  width: 30vw;
+}
+
+#rudimentText {
+  margin-top: 0;
+  padding-top: 0;
+  margin-left: 0.1vw;
+  font-size: 2.2vw;
+}
+
+.banner {
+  position: sticky;
+  background-color: #3494d3; /* Background color of the banner */
+  color: black; /* Text color */
+  text-align: center; /* Center align text */
+  padding: 20px; /* Padding around the content */
+  top: 0px;
+  margin: 0px;
+  width: 100vw; /* Make the banner full width */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); Optional: adds shadow for better visual */
+  box-sizing: border-box;
+  z-index: 1000;
+  height: 60px;
+  border-bottom: 1px solid black;
+}
+
+.grid {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 10px; /* optional, for spacing between items */
+}
+
+.main-body {
+  padding-left: 20px;
+}
+
+#metronome-settings {
+  display: flex; /* Flexbox layout */
+  gap: 30px; /* Optional: spacing between items */
+}
